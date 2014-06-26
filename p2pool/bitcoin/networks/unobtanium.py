@@ -15,7 +15,7 @@ RPC_CHECK = defer.inlineCallbacks(lambda bitcoind: defer.returnValue(
             'unobtaniumaddress' in (yield bitcoind.rpc_help()) and
             not (yield bitcoind.rpc_getinfo())['testnet']
         ))
-SUBSIDY_FUNC = lambda height: 0.001*100000000 if height<2000  else 1*100000000 >> (height * 1)//120000
+SUBSIDY_FUNC = lambda height: 0.001*100000000 if height<2000  else 1*100000000 >> (height * 1)//100000
 POW_FUNC = data.hash256
 BLOCK_PERIOD = 180 # s
 SYMBOL = 'Un'
