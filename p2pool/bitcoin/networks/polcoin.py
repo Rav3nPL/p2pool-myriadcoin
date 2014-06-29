@@ -20,9 +20,9 @@ POW_FUNC = data.hash256
 BLOCK_PERIOD = 60 # s
 SYMBOL = 'PLC'
 CONF_FILE_FUNC = lambda: os.path.join(os.path.join(os.environ['APPDATA'], 'polcoin') if platform.system() == 'Windows' else os.path.expanduser('~/Library/Application Support/polcoin/') if platform.system() == 'Darwin' else os.path.expanduser('~/.polcoin'), 'polcoin.conf')
-BLOCK_EXPLORER_URL_PREFIX = 'http://plcexplorer.com/block/' #dummy
-ADDRESS_EXPLORER_URL_PREFIX = 'http://plcexplorer.com/address/'
-TX_EXPLORER_URL_PREFIX = 'http://plcexplorer.com/tx/'
+BLOCK_EXPLORER_URL_PREFIX = 'http://blockchain.styx.net.pl/block/'
+ADDRESS_EXPLORER_URL_PREFIX = 'http://blockchain.styx.net.pl/address/'
+TX_EXPLORER_URL_PREFIX = 'http://blockchain.styx.net.pl/tx/'
 SANE_TARGET_RANGE = (2**256//2**32//1000 - 1, 2**256//2**32 - 1)
 DUMB_SCRYPT_DIFF = 1
 DUST_THRESHOLD = 0.001e8
