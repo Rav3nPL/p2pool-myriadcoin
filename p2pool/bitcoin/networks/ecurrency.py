@@ -21,9 +21,9 @@ SYMBOL = 'ISO'
 CONF_FILE_FUNC = lambda: os.path.join(os.path.join(os.environ['APPDATA'], 'ecurrency') if platform.system() == 'Windows' 
 				else os.path.expanduser('~/Library/Application Support/ecurrency/') if platform.system() == 'Darwin' 
 				else os.path.expanduser('~/.ecurrency'), 'ecurrency.conf')
-BLOCK_EXPLORER_URL_PREFIX = 'http://ecurrency.net/block/' #dummy
-ADDRESS_EXPLORER_URL_PREFIX = 'http://ecurrency.net/address/'
-TX_EXPLORER_URL_PREFIX = 'http://ecrurrency.net/tx/'
+BLOCK_EXPLORER_URL_PREFIX = 'http://explorer.ecurrency.io/block/'
+ADDRESS_EXPLORER_URL_PREFIX = 'http://explorer.ecurrency.io/address/'
+TX_EXPLORER_URL_PREFIX = 'http://explorer.ecurrency.io/tx/'
 SANE_TARGET_RANGE = (2**256//2**32//1000 - 1, 2**256//2**32 - 1)
 DUMB_SCRYPT_DIFF = 1
 DUST_THRESHOLD = 0.001e8
