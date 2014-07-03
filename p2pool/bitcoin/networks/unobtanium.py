@@ -20,9 +20,9 @@ POW_FUNC = data.hash256
 BLOCK_PERIOD = 180 # s
 SYMBOL = 'Un'
 CONF_FILE_FUNC = lambda: os.path.join(os.path.join(os.environ['APPDATA'], 'unobtanium') if platform.system() == 'Windows' else os.path.expanduser('~/Library/Application Support/unobtanium/') if platform.system() == 'Darwin' else os.path.expanduser('~/.unobtanium'), 'unobtanium.conf')
-BLOCK_EXPLORER_URL_PREFIX = 'http://bit.usr.sh:2750/block/'
-ADDRESS_EXPLORER_URL_PREFIX = 'http://bit.usr.sh:2750/address/'
-TX_EXPLORER_URL_PREFIX = 'http://bit.usr.sh:2750/tx/'
+BLOCK_EXPLORER_URL_PREFIX = 'http://cryptexplorer.com/block/'
+ADDRESS_EXPLORER_URL_PREFIX = 'http://cryptexplorer.com/address/'
+TX_EXPLORER_URL_PREFIX = 'http://cryptexplorer.com/tx/'
 SANE_TARGET_RANGE = (2**256//2**32//1000 - 1, 2**256//2**32 - 1)
 DUMB_SCRYPT_DIFF = 1
 DUST_THRESHOLD = 0.00001e8
