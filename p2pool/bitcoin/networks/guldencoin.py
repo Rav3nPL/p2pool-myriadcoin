@@ -7,7 +7,7 @@ from .. import data, helper
 from p2pool.util import pack
 
 
-P2P_PREFIX = 'fbc0b6db'.decode('hex') #pchmessagestart
+P2P_PREFIX = 'fcfef7e0'.decode('hex') #pchmessagestart
 P2P_PORT = 9231
 ADDRESS_VERSION = 38 #pubkey_address
 RPC_PORT = 9232
