@@ -7,20 +7,18 @@ from p2pool.bitcoin import networks
 # changes can be done by changing one, then the other
 
 PARENT = networks.nets['myr_sha']
-SHARE_PERIOD = 10 # seconds
-NEW_SHARE_PERIOD = 10 # seconds
-CHAIN_LENGTH = 24*60*60//10 # shares
-REAL_CHAIN_LENGTH = 24*60*60//10 # shares
-TARGET_LOOKBEHIND = 50 # shares //with that the pools share diff is adjusting faster, important if huge hashing power comes to the pool
+SHARE_PERIOD = 30 # seconds
+CHAIN_LENGTH = 12*60*60//30 # shares
+REAL_CHAIN_LENGTH = 12*60*60//30 # shares
+TARGET_LOOKBEHIND = 10 # shares //with that the pools share diff is adjusting faster, important if huge hashing power comes to the pool
 SPREAD = 30 # blocks
-NEW_SPREAD = 30 # blocks
-IDENTIFIER = 'fc70135c700a00ee'.decode('hex')
-PREFIX = '9472ef181e88efcb'.decode('hex')
+IDENTIFIER = 'ef0022a7f188e6ba'.decode('hex')
+PREFIX = 'b1a622f061a7eb1a'.decode('hex')
 P2P_PORT = 5577
 MIN_TARGET = 0
 MAX_TARGET = 2**256//2**20 - 1
 PERSIST = True
 WORKER_PORT = 5578
-BOOTSTRAP_ADDRS = 'birdspool.no-ip.org nz.p2pool.geek.nz'.split(' ')
+BOOTSTRAP_ADDRS = 'birdspool.no-ip.org aforis.mooo.com p2poolcoin.com us.myriadminers.com eu.myriadminers.com nz.p2pool.geek.nz rav3n.dtdns.net p2pool-eu.dtdns.net p2pool-us.dtdns.net'.split(' ')
 ANNOUNCE_CHANNEL = '#p2pool-alt'
 VERSION_CHECK = lambda v: v >= 90206

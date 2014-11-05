@@ -15,7 +15,6 @@ RPC_CHECK = defer.inlineCallbacks(lambda bitcoind: defer.returnValue(
 		'myriadcoinaddress' in (yield bitcoind.rpc_help()) and
 		not (yield bitcoind.rpc_getinfo())['testnet']))
 SUBSIDY_FUNC = lambda height: 1000*100000000 >> (height + 1)//967680
-BLOCKHASH_FUNC = lambda data: pack.IntType(256).unpack(__import__('qubit_hash').getPoWHash(data))
 POW_FUNC = lambda data: pack.IntType(256).unpack(__import__('qubit_hash').getPoWHash(data))
 BLOCK_PERIOD = 30 #s
 SYMBOL = 'MYR'

@@ -7,18 +7,18 @@ from p2pool.bitcoin import networks
 # changes can be done by changing one, then the other
 
 PARENT = networks.nets['myr_skein']
-SHARE_PERIOD = 15 # seconds target spacing
-CHAIN_LENGTH = 24*60*60//10 # shares
-REAL_CHAIN_LENGTH = 24*60*60//10 # shares
-TARGET_LOOKBEHIND = 200
-SPREAD = 60
-IDENTIFIER = 'fafa54457667eeee'.decode('hex')
-PREFIX = 'fa6754ee45ee76fa'.decode('hex')
+SHARE_PERIOD = 10 # seconds target spacing
+CHAIN_LENGTH = 12*60*60//10 # shares
+REAL_CHAIN_LENGTH = 12*60*60//10 # shares
+TARGET_LOOKBEHIND = 20
+SPREAD = 30
+IDENTIFIER = 'e7f1aa882ab061e9'.decode('hex')
+PREFIX = 'fb1a7ef520a175ec'.decode('hex')
 P2P_PORT = 5588
 MIN_TARGET = 0
 MAX_TARGET = 2**256//2**20 - 1
 PERSIST = True
 WORKER_PORT = 5589
-BOOTSTRAP_ADDRS = 'birdspool.no-ip.org nz.p2pool.geek.nz'.split(' ')
+BOOTSTRAP_ADDRS = 'birdspool.no-ip.org aforis.mooo.com p2poolcoin.com us.myriadminers.com eu.myriadminers.com nz.p2pool.geek.nz rav3n.dtdns.net p2pool-eu.dtdns.net p2pool-us.dtdns.net'.split(' ')
 ANNOUNCE_CHANNEL = '#p2pool-alt'
 VERSION_CHECK = lambda v: v >= 90206

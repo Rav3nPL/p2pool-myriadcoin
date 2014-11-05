@@ -8,17 +8,17 @@ from p2pool.bitcoin import networks
 
 PARENT = networks.nets['myr_qubit']
 SHARE_PERIOD = 10 # seconds target spacing
-CHAIN_LENGTH = 24*60*60//10 # shares
-REAL_CHAIN_LENGTH = 24*60*60//10 # shares
-TARGET_LOOKBEHIND = 50
+CHAIN_LENGTH = 12*60*60//10 # shares
+REAL_CHAIN_LENGTH = 12*60*60//10 # shares
+TARGET_LOOKBEHIND = 20
 SPREAD = 30
-IDENTIFIER='fc70135c700a00ee'.decode('hex')
-PREFIX='9472ef181e88efcb'.decode('hex')
+IDENTIFIER='ef558a6be2ee9a17'.decode('hex')
+PREFIX='f50ab513e893a1f2'.decode('hex')
 P2P_PORT = 5566
 MIN_TARGET = 0
 MAX_TARGET = 2**256//2**20 - 1
 PERSIST = True
 WORKER_PORT = 5567
-BOOTSTRAP_ADDRS = 'birdspool.no-ip.org nz.p2pool.geek.nz p2poolcoin.com'.split(' ')
+BOOTSTRAP_ADDRS = 'birdspool.no-ip.org aforis.mooo.com p2poolcoin.com us.myriadminers.com eu.myriadminers.com nz.p2pool.geek.nz rav3n.dtdns.net p2pool-eu.dtdns.net p2pool-us.dtdns.net'.split(' ')
 ANNOUNCE_CHANNEL = '#p2pool-alt'
 VERSION_CHECK = lambda v: v >= 90206
