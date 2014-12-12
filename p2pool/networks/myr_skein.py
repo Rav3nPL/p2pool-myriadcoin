@@ -17,8 +17,8 @@ PREFIX = 'fb1a7ef520a175ec'.decode('hex')
 P2P_PORT = 5588
 MIN_TARGET = 0
 MAX_TARGET = 2**256//2**20 - 1
-PERSIST = True
+PERSIST = False
 WORKER_PORT = 5589
-BOOTSTRAP_ADDRS = 'birdspool.no-ip.org aforis.mooo.com p2poolcoin.com us.myriadminers.com eu.myriadminers.com nz.p2pool.geek.nz rav3n.dtdns.net p2pool-eu.dtdns.net p2pool-us.dtdns.net'.split(' ')
+BOOTSTRAP_ADDRS = 'birdspool.no-ip.org aforis.mooo.com p2poolcoin.com us.myriadminers.com eu.myriadminers.com nz.p2pool.geek.nz rav3n.dtdns.net p2pool-eu.gotgeeks.com p2pool-us.gotgeeks.com'.split(' ')
 ANNOUNCE_CHANNEL = '#p2pool-alt'
 VERSION_CHECK = lambda v: v >= 90206
